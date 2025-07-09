@@ -1,0 +1,15 @@
+pandas
+numpy
+scipy
+vaderSentiment
+textblob
+matplotlib
+langchain
+openai<2.0.0 # Specify <2.0.0 as langchain often has dependencies here, and notebook used OpenAI client
+sentence-transformers
+langchain-google-genai
+google-api-core
+google-auth
+protobuf  # Often a dependency for Google libraries
+# requests is a common transitive dependency, but good to list if directly used or for clarity.
+# json, os, re, warnings, math, csv, io, argparse are standard library, no need to list.
