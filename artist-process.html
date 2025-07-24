@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Automated Age: An Artistic Exploration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+        .font-sans {
+            font-family: 'Inter', sans-serif;
+        }
+        .main-grid {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            max-width: 1600px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+        .sidebar {
+            padding: 4rem 2rem;
+            border-right: 1px solid #222;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar-header h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            font-size: 2rem;
+            line-height: 1.1;
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+        }
+        .sidebar-meta {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #888;
+        }
+        .sidebar-meta p {
+            margin-bottom: 0.5rem;
+        }
+        .sidebar-nav {
+            margin-top: 4rem;
+        }
+        .sidebar-nav a {
+            display: block;
+            margin-bottom: 1.5rem;
+            text-decoration: none;
+            color: #ccc;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .sidebar-nav a:hover {
+            color: #fff;
+        }
+        .sidebar-footer {
+            margin-top: auto;
+            font-size: 0.75rem;
+            color: #555;
+        }
+        .main-content {
+            padding: 4rem 5%;
+        }
+        h2, h3 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding-bottom: 1rem;
+            padding-top: 2rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #222;
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #aaa;
+        }
+        p {
+            max-width: 800px;
+            font-size: 0.95rem;
+        }
+        .quote {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 2rem 0 4rem 0;
+            padding-left: 1.5rem;
+            border-left: 2px solid #555;
+            color: #ccc;
+        }
+        .image-container {
+            margin: 3rem 0;
+        }
+        .image-container img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid #222;
+        }
+        .image-caption {
+            font-size: 0.8rem;
+            color: #888;
+            text-align: left;
+            margin-top: 1rem;
+        }
+        .references {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #222;
+            font-size: 0.9rem;
+        }
+        .references a {
+            color: #999;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .references a:hover {
+            color: #fff;
+        }
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        ul {
+            list-style-position: inside;
+            max-width: 800px;
+        }
+        .list-disc li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-grid">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="font-sans">The Automated Age</h1>
+            </div>
+            <div class="sidebar-meta">
+                <p>Ganesh Hegde</p>
+                <p>Data Driven Information Design</p>
+                <p>July 24, 2025</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#statement">1. Statement</a>
+                <a href="#concept">2. Concept</a>
+                <a href="#medium">3. Medium</a>
+                <a href="#process">4. Process</a>
+                <a href="#artwork">5. Artwork</a>
+                <a href="#reflection">6. Reflection</a>
+                <a href="#references">7. References</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>&copy; 2025. All Rights Reserved.</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="grid-gallery">
+                <div class="image-container">
+                    <img src="Video_with_Charts_Generated-ezgif.com-crop.gif" alt="Title screen of The Automated Age visualization">
+                </div>
+                <div class="image-container">
+                    <img src="Video_of_Data_Visualizations_Ready-ezgif.com-added-text.gif" alt="Title screen of The Automated Age visualization">
+                </div>
+            </div>
+            
+        
+            <!-- Artist Statement -->
+            <section id="statement">
+                <h2>1. Artist Statement</h2>
+                <p class="quote">
+                    "The Automated Age" is an interactive data visualization that explores the complex and often invisible effects of artificial intelligence on the global job market. Using a dataset on the influence of AI on various professions, the work translates abstract numbers and percentages into an immersive, narrative 3D experience. The goal is to encourage the viewer to reflect on how data can be used not only to understand the profound changes in our working world but also to feel and question them.
+                </p>
+            </section>
+
+            <!-- Concept and Inspiration -->
+            <section id="concept">
+                <h2>2. Concept & Inspiration</h2>
+                <h3>Core Concept</h3>
+                <p>The central theme is the visualization of change—from the displacement to the augmentation of jobs by AI. Instead of just presenting dry facts, the aim is to create an emotional and intuitive connection to the data to make the debate about the future of work more accessible.</p>
+                
+                <h3>Inspiration</h3>
+                <p>The primary inspiration for this project was the underlying research from the "Copy of AI impact on Jobs - Colab.pdf." Artistically, the project was inspired by the idea of telling a story through data and taking the viewer on a guided journey through the various facets of AI's influence, similar to a digital narrative.</p>
+                
+                <h3>Artistic Questions</h3>
+                <ul class="list-disc">
+                    <li>How can a complex, multi-layered dataset be translated into an understandable and engaging visual form?</li>
+                    <li>Can a data visualization evoke an emotional response beyond just presenting facts?</li>
+                    <li>What new perspectives on the future of work can arise from the interactive exploration of data?</li>
+                </ul>
+            </section>
+
+            <!-- The Medium: Data & Tools -->
+            <section id="medium">
+                <h2>3. The Medium: Data & Tools</h2>
+                <h3>The Data as a Medium</h3>
+                <p><strong>Dataset:</strong> "From Data Entry to CEO: The AI Job Threat Index." This dataset catalogs various job titles, the percentage of AI's influence, the number of human tasks compared to AI models, and the respective industry.</p>
+                <p><strong>Artistic Rationale:</strong> This dataset was chosen because it provides a clear and quantifiable metric ("AI Impact") that is excellently suited for visual representation.</p>
+
+                <h3>The Digital Canvas & Brush</h3>
+                <p>The visualization was created as a web application using <strong>HTML, CSS, and JavaScript</strong> with core libraries like <strong>Three.js</strong>, <strong>Plotly.js</strong>, and <strong>D3.js</strong>.</p>
+            </section>
+            
+            <!-- Creative Process -->
+            <section id="process">
+                <h2>4. Creative Process & Iterations</h2>
+                <p>The creative process evolved step-by-step from a simple representation to a complex, narrative experience, marked by several key milestones.</p>
+                <p></p>
+                <h3>Milestone 1: The 3D Scatter Plot</h3>
+                <p>The initial idea was to represent the core data—tasks, AI models, and AI influence—in an interactive 3D scatter plot. This formed the basis for the later work.</p>
+                <div class="image-container" style="width: 50%;">
+                    <img src="../Desktop/3dplot.png" alt="Screenshot of the initial 3D scatter plot">
+                    <p class="image-caption">Early iteration: The core 3D data scatter plot.</p>
+                </div>
+
+                <h3>Milestone 3: Diversification of Visualizations</h3>
+                <p>To make the story more varied, additional chart types were added, including a list view, a contour plot, and the funnel chart seen below.</p>
+                <div class="grid-gallery">
+                    <div class="image-container">
+                        <img src="../Desktop/funnel.png" alt="Screenshot of the Job Impact Funnel chart.">
+                         <p class="image-caption">The funnel chart shows job distribution across impact levels.</p>
+                    </div>
+                     <div class="image-container">
+                        <img src="../Desktop/bar.png" alt="Bar chart of top 10 most impacted jobs">
+                        <p class="image-caption">A bar chart highlights the top 10 most impacted jobs.</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="../Desktop/sunburst.png" alt="Bar chart of top 10 most impacted jobs">
+                        <p class="image-caption">A bar chart highlights the top 10 most impacted jobs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Final Artwork -->
+            <section id="artwork">
+                <h2>5. The Final Artwork</h2>
+                <p>The final work is a fluid, interactive narrative that takes the viewer on a journey from an atmospheric introduction to a concrete list of the most affected professions, and finally to a series of interactive charts for self-exploration. The dark, space-themed aesthetic was deliberately chosen to create a futuristic and contemplative atmosphere.</p>
+                <div class="image-container" style="width: 80%;">
+                    <img src="../Desktop/landscape.png" alt="Final view of the Job Landscape section">
+                    <p class="image-caption">The final "Job Landscape" section provides a clean, informative list.</p>
+                </div>
+            </section>
+
+            <!-- Reflection & Future Directions -->
+            <section id="reflection">
+                <h2>6. Reflection & Future Directions</h2>
+                <h3>Personal Reflection</h3>
+                <p>The biggest challenge was balancing a guided narrative with free exploration. It was important not to overwhelm the viewer with too much data at once, but still give them the freedom to make their own discoveries. Technically, combining CSS3D overlays with a WebGL scene and ensuring smooth performance was a key task.</p>
+                
+                <h3>Future Directions</h3>
+                <p>The project could be expanded by connecting to a live API for up-to-date data, adding more visualizations to explore other correlations, or even creating a physical, room-filling installation.</p>
+            </section>
+
+            <!-- References -->
+            <footer id="references" class="references">
+                <h2>7. Exhibition & References</h2>
+                <ul class="space-y-2">
+                    <li><strong>Live Artwork:</strong> <a href="https://adhvaitaganesh.github.io/data-visualisation/" target="_blank">View Project</a></li>
+                    <li><strong>Code Repository:</strong> <a href="https://github.com/adhvaitaganesh/data-visualisation/" target="_blank">View on GitHub</a></li>
+                    <li><strong>Inspirations:</strong> Manav Gupta's dataset, "Copy of AI impact on Jobs - Colab.pdf", and the works of artists like Refik Anadol.</li>
+                </ul>
+            </footer>
+        </main>
+    </div>
+
+</body>
+</html>
